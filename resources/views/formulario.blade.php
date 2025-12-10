@@ -14,8 +14,15 @@
             display: flex;
             flex-direction: column;
             align-items: center;     /* centra horizontalmente */
-            background-color: #131414ff;
+            background-color: #012039eb;
             padding-top: 60px;       /* empuja el título y formulario hacia arriba */
+
+            /* Fondo con imagen */
+        background-image: url('{{ asset('images/fondo-password.jpeg') }}');
+        background-size: cover;       /* hace que la imagen cubra toda la pantalla */
+        background-position: center;  /* centra la imagen */
+        background-repeat: no-repeat; /* evita que se repita */
+
 
         }
 
@@ -38,7 +45,7 @@
 
 
         form {
-            background: #fff;
+            background: #0c0b0bff;
             padding: 20px;
             border-radius: 8px;
             width: 40%;
@@ -50,6 +57,7 @@
             display: block;
             margin-top: 15px;
             font-weight: bold;
+            color: #fff;
         }
         input, select, button {
             width: 100%;
@@ -83,10 +91,8 @@
             <option value="numbers">Solo números</option>
             <option value="alphanumeric">Letras y números</option>
         </select>
-
         <button type="submit">Generar</button>
     </form>
-    
      @isset($password)
             <h2>Contraseña Generada:</h2>
             <p><strong>{{ $password }}</strong></p>
