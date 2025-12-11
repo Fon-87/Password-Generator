@@ -31,16 +31,16 @@ class PasswordController extends Controller
             break;  
     }
 
-
     //Genera la contraseña aleatoria 
     $password='';
     for($i=0; $i < $validated['length']; $i++){
         $index=rand(0, strlen($characters)-1);
         $password.=$characters[random_int(0, strlen($characters)-1)];
     }
-
+   
     //Retorna la vista con la contraseña generada
-    return view('formulario', ['password'=>$password]);
-  } 
+    return redirect()->back()->with('password', $password);
 
+  } 
+   
 }

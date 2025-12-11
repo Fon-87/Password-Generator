@@ -1,0 +1,73 @@
+ body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;   /* centra horizontalmente */
+      align-items: flex-start;   /* alinea arriba */
+      background-image: url("../images/fondo-password.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      padding-top: 40px;
+    }
+
+    .container {
+      background-color: rgba(0,0,0,0.85); /* negro semi-transparente */
+      color: white;
+      padding: 30px;
+      border-radius: 10px;
+      width: 90%;
+      max-width: 600px;          /* ancho máximo */
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    }
+
+    h1, h2, p {
+      text-align: center;
+      color: #fff;
+    }
+
+    form {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    input, select, button {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      background-color: #0078d7;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #005fa3;
+    }
+
+    .copy-btn {
+      width: 200px;
+      margin: 20px auto 0;
+      display: block;
+      padding: 10px;
+      background-color: #0078d7;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .copy-btn:hover {
+      background-color: #005fa3;
+    }
