@@ -61,6 +61,11 @@ El framework **Laravel** también es software open‑source con licencia MIT.
 
 ---
 
+## 📸 Créditos de imágenes
+La imagen utilizada en este proyecto proviene de [Vecteezy](https://www.vecteezy.com/) bajo licencia gratuita.
+
+---
+
 ## 👤 Autor
 
 - **Nombre:** Alfonso (Fon-87)  
