@@ -42,6 +42,11 @@ A continuación se muestran algunas imágenes de la interfaz de la aplicación:
 
 ---
 
+## 📂 Estructura del proyecto
+
+app/ └── Http/ └── Controllers/ └── PasswordController.php # Lógica de generación de contraseñas resources/ └── views/ └── password.blade.php # Vista principal con formulario public/ └── css/ └── style.css # Estilos personalizados └── images/ └── fondo-password.jpg # Imagen de fondo routes/ └── web.php # Definición de rutas
+
+
 ### Clona el repositorio:
    
    git clone https://github.com/Fon-87/password-generator.git
@@ -53,6 +58,14 @@ A continuación se muestran algunas imágenes de la interfaz de la aplicación:
 Este proyecto está bajo la licencia [MIT](https://opensource.org/licenses/MIT).
 
 El framework **Laravel** también es software open‑source con licencia MIT.
+
+---
+
+## 👤 Autor
+
+- **Nombre:** Alfonso (Fon-87)  
+- **GitHub:** [@Fon-87](https://github.com/Fon-87)  
+
 
 
 
