@@ -12,7 +12,7 @@ class PasswordController extends Controller
     //Validación de los datos del formulario 
     $validated = $request->validate([
         'length' => 'required|integer|min:4|max:64',
-        'type' => 'required|in:letters,numbers,alphanumeric',
+        'type' => 'required|in:letters,numbers,alphanumeric_symbols',
     ]);
 
     //Definir conjuntos de caracteres

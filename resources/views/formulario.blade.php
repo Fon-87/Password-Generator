@@ -19,7 +19,7 @@
         <option value="" disabled selected>Seleccione un tipo</option>
         <option value="letters">Solo letras</option>
         <option value="numbers">Solo números</option>
-        <option value="alphanumeric">Letras y números</option>
+        <option value="alphanumeric_symbols">Letras, números y símbolos</option>
       </select>
       <button type="submit">Generar</button>
     </form>
