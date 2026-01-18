@@ -18,6 +18,7 @@ class PasswordController extends Controller
     //Definir conjuntos de caracteres
     $letters='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
     $numbers='0123456789';
+    $simbols='!@#$%^&*()_+-=[]{}|;:,.<>?';
 
     switch($validated['type']){
         case 'letters':
@@ -29,12 +30,15 @@ class PasswordController extends Controller
         case 'alphanumeric':
             $characters=$letters.$numbers;
             break;  
+
+        case 'alphanumeric_symbols':
+            $characters=$letters.$numbers.$simbols;
+            break;
     }
 
     //Genera la contraseña aleatoria 
     $password='';
     for($i=0; $i < $validated['length']; $i++){
-        $index=rand(0, strlen($characters)-1);
         $password.=$characters[random_int(0, strlen($characters)-1)];
     }
    
