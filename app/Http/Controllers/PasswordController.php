@@ -12,13 +12,13 @@ class PasswordController extends Controller
     //Validación de los datos del formulario 
     $validated = $request->validate([
         'length' => 'required|integer|min:4|max:64',
-        'type' => 'required|in:letters,numbers,alphanumeric_symbols',
+        'type' => 'required|in:letters,numbers,symbols,alphanumeric_symbols',
     ]);
 
     //Definir conjuntos de caracteres
     $letters='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
     $numbers='0123456789';
-    $simbols='!@#$%^&*()_+-=[]{}|;:,.<>?';
+    $symbols='!@#$%^&*()_+-=[]{}|;:,.<>?';
 
     switch($validated['type']){
         case 'letters':
@@ -27,12 +27,12 @@ class PasswordController extends Controller
         case 'numbers':
             $characters=$numbers;
             break;
-        case 'alphanumeric':
-            $characters=$letters.$numbers;
+        case 'symbols':
+            $characters=$letters.$numbers.$symbols;
             break;  
 
         case 'alphanumeric_symbols':
-            $characters=$letters.$numbers.$simbols;
+            $characters=$letters.$numbers.$symbols;
             break;
     }
 

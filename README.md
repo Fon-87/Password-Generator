@@ -24,7 +24,8 @@ A continuación se muestran algunas imágenes de la interfaz de la aplicación:
 - Tipos de caracteres disponibles:
   - Solo letras (mayúsculas y minúsculas).
   - Solo números.
-  - Letras y números (alfa-numéricas).
+  - Solo símbolos
+  - Letras, números y símbolos.
 - Validación de longitud (mínimo 4, máximo 64).
 - Interfaz simple y moderna con CSS.
 - Función para copiar la contraseña al portapapeles.
