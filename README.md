@@ -44,9 +44,22 @@ A continuación se muestran algunas imágenes de la interfaz de la aplicación:
 ---
 
 ## 📂 Estructura del proyecto
+- app/
+- Http/
+- Controllers/
+- PasswordController.php — Lógica de generación de contraseñas
+- resources/
+- views/
+- password.blade.php — Vista principal con el formulario
+- public/
+- css/
+- style.css — Estilos personalizados
+- images/
+- fondo-password.jpg — Imagen de fondo
+- routes/
+- web.php — Definición de ruta
 
-app/ └── Http/ └── Controllers/ └── PasswordController.php # Lógica de generación de contraseñas resources/ └── views/ └── password.blade.php # Vista principal con formulario public/ └── css/ └── style.css # Estilos personalizados └── images/ └── fondo-password.jpg # Imagen de fondo routes/ └── web.php # Definición de rutas
-
+## ⚙️ Instalación y configuración
 
 ### Clona el repositorio:
    
